@@ -13,8 +13,9 @@ const App = () => {
   const [errorMessage, setErrorMessage] = useState('');
 
   const fetchProducts = async () => {
+    console.log("dddddddddddddddddd");
     const { data } = await commerce.products.list();
-    console.log(data,"ssssss");
+    console.log(data, "ssssss");
 
     setProducts(data);
   };
